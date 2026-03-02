@@ -4,6 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Haipeng Gao, PhD</title>
+    <meta
+      name="description"
+      content="Haipeng Gao is an AI/ML engineer specializing in ads marketplace systems, trust and safety, growth and monetization, forecasting, optimization, and LLM-based solutions."
+    />
+    <meta
+      name="keywords"
+      content="Haipeng Gao, AI, ML, machine learning, ads marketplace, trust and safety, growth, monetization, optimization, forecasting, LLM, data science, patents, publications"
+    />
+    <meta name="author" content="Haipeng Gao" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Haipeng Gao, PhD | AI/ML Engineer" />
+    <meta
+      property="og:description"
+      content="AI/ML engineer focused on large-scale business systems, including ads marketplace, trust and safety, and growth/monetization."
+    />
+    <meta property="og:site_name" content="Haipeng Gao" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Haipeng Gao, PhD | AI/ML Engineer" />
+    <meta
+      name="twitter:description"
+      content="AI/ML engineer focused on large-scale business systems, optimization, forecasting, and LLM-based methods."
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Haipeng Gao",
+        "jobTitle": "AI/ML Engineer",
+        "sameAs": ["https://www.linkedin.com/in/haipenggao/"],
+        "knowsAbout": [
+          "Machine Learning",
+          "Artificial Intelligence",
+          "Ads Marketplace",
+          "Trust and Safety",
+          "Growth and Monetization",
+          "Optimization",
+          "Forecasting",
+          "Large Language Models"
+        ]
+      }
+    </script>
     <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
 
     <style>
@@ -59,10 +104,14 @@
       }
 
       body {
-        width: min(980px, calc(100% - 48px));
+        width: min(750px, calc(100% - 48px));
         margin: 0 auto;
         padding: 40px 24px 72px;
         line-height: 1.45;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
       }
 
       table,
@@ -137,14 +186,9 @@
         margin-bottom: 1.5em;
       }
 
-      .visitor-counter {
-        margin-top: 28px;
-        font-size: 0.9rem;
-        color: #444;
-      }
-
       .site-copyright {
-        margin-top: 6px;
+        margin-top: auto;
+        padding-top: 36px;
         font-size: 0.85rem;
         color: #666;
       }
@@ -178,10 +222,6 @@
 
         .section-title {
           margin-bottom: 6px;
-        }
-
-        .visitor-counter {
-          margin-top: 20px;
         }
       }
     </style>
@@ -231,30 +271,25 @@
               <tbody>
                 <tr>
                   <td>
-                    Haipeng Gao is passionate about applying artificial
-                    intelligence and machine learning to solve large-scale,
-                    high-impact business problems. His expertise includes
-                    machine learning, optimization, and modern LLM-based
-                    methods, with particular experience in marketplace
-                    (advertising), trust and safety, and monetization domains.
+                    Haipeng Gao is an accoplished expert in AI/ML who is
+                    passionate about solving large-scale, high-impact business
+                    problems using machine learning and AI. His expertise
+                    includes machine learning, optimization, and modern
+                    LLM-based methods, with particular experience in (ads)
+                    marketplace , trust and safety, and monetization domains.
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    In parallel with his industry work, he is passionate about
-                    higher education in the AI/ML field. He focuses on designing
-                    well-structured topics and refining the delivery and
-                    presentation of technical material to make AI/ML concepts
-                    engaging and accessible to a broad audience, while
-                    maintaining methodological rigor and conceptual depth. He
-                    pursues this through both teaching and book writing.
+                    Alongside his industry work, he contributes to the AI/ML
+                    community through teaching and technical book writing.
                     <br /><br />
                     View published books on
                     <a
                       href="https://www.amazon.com/s?k=Haipeng+Gao&i=stripbooks&crid=IZI7YDKY0SK4&sprefix=haipeng+gao%2Cstripbooks%2C158&ref=nb_sb_noss_1"
                       target="_blank"
                     >
-                      Amazon </a
+                      <b>Amazon</b></a
                     >.
                   </td>
                 </tr>
@@ -427,13 +462,13 @@
                     <em
                       >Minimum Accepted Bids Prediction as Demand Side
                       Platform</em
-                    >. LinkedIn. Filed with USPTO in May 2025.
+                    >. LinkedIn.
                   </td>
                 </tr>
                 <tr>
                   <td>
                     <em>Federated Learning for Media Content Recommendation</em
-                    >. ByteDance. Published by USPTO in June 2024.
+                    >. TikTok.
                   </td>
                 </tr>
                 <tr>
@@ -442,7 +477,7 @@
                       >Multi-Layer Artificial Intelligence Models for
                       Progressive Predictions During Data Pipeline
                       Management</em
-                    >. PayPal. Granted by USPTO in April 2024.
+                    >. PayPal.
                   </td>
                 </tr>
               </tbody>
@@ -562,80 +597,8 @@
       </tbody>
     </table>
 
-    <p class="visitor-counter">
-      Visitors: <span id="visitor-count">Loading...</span>
-    </p>
     <p class="site-copyright">
       Copyright &copy; Haipeng Gao. All rights reserved.
     </p>
-
-    <script>
-      (function () {
-        var el = document.getElementById("visitor-count");
-        if (!el) return;
-
-        var done = false;
-        function setCountText(text) {
-          if (done) return;
-          done = true;
-          el.textContent = text;
-        }
-
-        var namespace = "haipeng-gao-resume";
-        var key = "homepage";
-        var url =
-          "https://api.countapi.xyz/hit/" +
-          encodeURIComponent(namespace) +
-          "/" +
-          encodeURIComponent(key);
-
-        // Never keep "Loading..." forever.
-        var timeoutId = setTimeout(function () {
-          setCountText("Unavailable");
-        }, 8000);
-
-        function handleData(data) {
-          clearTimeout(timeoutId);
-          if (data && typeof data.value === "number") {
-            setCountText(data.value.toLocaleString());
-          } else {
-            setCountText("Unavailable");
-          }
-        }
-
-        function requestWithXHR() {
-          try {
-            var xhr = new XMLHttpRequest();
-            xhr.open("GET", url, true);
-            xhr.onreadystatechange = function () {
-              if (xhr.readyState === 4) {
-                try {
-                  handleData(JSON.parse(xhr.responseText));
-                } catch (e) {
-                  setCountText("Unavailable");
-                }
-              }
-            };
-            xhr.onerror = function () {
-              setCountText("Unavailable");
-            };
-            xhr.send();
-          } catch (e) {
-            setCountText("Unavailable");
-          }
-        }
-
-        if (typeof fetch === "function") {
-          fetch(url)
-            .then(function (res) {
-              return res.json();
-            })
-            .then(handleData)
-            .catch(requestWithXHR);
-        } else {
-          requestWithXHR();
-        }
-      })();
-    </script>
   </body>
 </html>
