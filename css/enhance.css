@@ -37,7 +37,22 @@ td[bgcolor] {
 /* ---- One column: each section title sits above its content ---------------- */
 
 /* The original already does this on phones (up to 820px wide). Here it is the
-   layout at every width. */
+   layout at every width.
+
+   The table and its body become plain blocks too. Rows set to display:block
+   inside a real table are not valid table parts, so each browser repairs them
+   with anonymous table boxes, and engines differ in how. On an iPhone this
+   once laid the sections out side by side as table columns. Plain blocks
+   leave nothing to repair. */
+body.one-col > table,
+body.one-col > table > tbody {
+  display: block;
+}
+
+body.one-col > table > tbody {
+  padding: 2px; /* the table's default 2px spacing, which a block no longer has */
+}
+
 body.one-col > table {
   margin-top: 20px; /* room between the name and the first section */
 }

@@ -290,6 +290,18 @@
           gap: 12px;
         }
 
+        /* Block rows inside a real table force browsers to repair it with
+           anonymous table boxes, and engines differ in how. Make the table
+           and its body blocks as well (same as enhance.css). */
+        body > table,
+        body > table > tbody {
+          display: block;
+        }
+
+        body > table > tbody {
+          padding: 2px; /* the table's default spacing, kept */
+        }
+
         body > table > tbody > tr[valign="top"] {
           display: block;
           margin-bottom: 10px;
